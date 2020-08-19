@@ -45,16 +45,6 @@ function TabPage () {
         options={{
           title: 'TopB',
         }}
-        listeners={({ navigation, route }) => ({
-          tabPress: e => {
-            // Prevent default action
-            e.preventDefault();
-            console.log('TapBへ移動')
-
-            // Do something with the `navigation` object
-            navigation.navigate('TopB');
-          },
-        })}
         component={TopB}
       />
     </Tab.Navigator>
